@@ -12,18 +12,38 @@ This project was developed for the **Tathva Tech Team Inductions**. It is an API
 1. **Validation**: Joi is used to validate essential fields like email and password, especially during registration.
 
 ## Installation
-
-1. git clone https://github.com/SreehariSanjeev04/Tathva-Inductions.git
-2. cd repository-folder
-3. node server.js
+```bash
+    git clone https://github.com/SreehariSanjeev04/Tathva-Inductions.git
+    cd repository-folder
+    node server.js
+```
 
 ## API Endpoints
 
 1. **POST /api/register**: Registers a new user. Requires name, email, password, and age in the request body.
+```bash
+    "name": "NAME",
+    "email": "email@example.com",
+    "password": "password",
+    "age": 90
+```
 2. **POST /api/login**: Authenticates a user and returns an access token and refresh token.
+```bash
+    "email": "email@example.com",
+    "password": "password",
+```
 3. **GET /api/users (Protected)**: Retrieves all users (excluding their passwords).
 4. **PUT /api/update (Protected)**: Updates an existing user
+```bash
+    "name": "NEW_NAME",
+    "email": "new_email@example.com",
+    "password": "new_password",
+    "age": 80
+```
 5. **DELETE /api/delete (Protected)**: Deletes a user and blacklists their token upon deletion.
+```bash
+    "email": "new_email@example.com",
+```
 6. **POST /api/increment-point (Protected)**: Increments the logged-in user’s points.
 7. **GET /api/topscore**: Retrieves the user with the highest points.
 8. **GET /api/averagepoint**: Calculates and returns the average points of all users.
