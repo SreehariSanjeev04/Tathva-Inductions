@@ -13,9 +13,9 @@ This project was developed for the **Tathva Tech Team Inductions**. It is an API
 
 ## Installation
 
-   git clone https://github.com/SreehariSanjeev04/Tathva-Inductions.git
-   cd repository-folder
-   node server.js
+1. git clone https://github.com/SreehariSanjeev04/Tathva-Inductions.git
+2. cd repository-folder
+3. node server.js
 
 ## API Endpoints
 
